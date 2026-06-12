@@ -1,40 +1,3 @@
-# MPulse IA — Site Institucional
-
-<div align="center">
-
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow?style=flat-square)
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0.0-purple?style=flat-square)
-![Licença](https://img.shields.io/badge/licen%C3%A7a-privado-red?style=flat-square)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-**Site institucional e comercial da MPulse IA**  
-Soluções e Estratégias em Inteligência Artificial para Negócios
-
-[🌐 Acessar site](#) · [📱 WhatsApp](https://wa.me/5524999999999) · [📋 Solicitar proposta](#contato)
-
-</div>
-
----
-
-## 📑 Índice
-
-- [Sobre o projeto](#-sobre-o-projeto)
-- [Tecnologias](#-tecnologias)
-- [Estrutura do repositório](#-estrutura-do-repositório)
-- [Como rodar localmente](#-como-rodar-localmente)
-- [Como publicar no ar](#-como-publicar-no-ar)
-- [Como atualizar o site](#-como-atualizar-o-site)
-- [Arquitetura do código](#-arquitetura-do-código)
-- [Serviços oferecidos](#-serviços-oferecidos)
-- [Roadmap](#-roadmap)
-- [Contato](#-contato)
-
----
-
-## 📌 Sobre o projeto
-
 Este repositório contém o site institucional da **MPulse IA**, empresa especializada em soluções de Inteligência Artificial para negócios de diferentes segmentos.
 
 O site foi projetado para:
@@ -44,10 +7,7 @@ O site foi projetado para:
 - Oferecer atendimento inicial automatizado via **agente de IA** embutido no chat widget
 - Transmitir credibilidade técnica e autoridade no segmento de IA
 
-**Fundador:** Matheus Pimentel — Mestre em Engenharia e Especialista em IA para Negócios  
-**Localização:** Barra Mansa, RJ — Atendimento remoto em todo o Brasil
-
----
+**Fundador:** Matheus Fernandes de Sousa Pimentel — Mestre em Engenharia e Especialista em IA para Negócios  
 
 ## 🛠️ Tecnologias
 
@@ -60,8 +20,6 @@ O site foi projetado para:
 | **Vercel** | — | Hospedagem, HTTPS e deploy automático via GitHub |
 
 > **Sem dependências externas.** O projeto não usa npm, frameworks ou bibliotecas de terceiros. Isso garante carregamento rápido, zero configuração de build e máxima portabilidade.
-
----
 
 ## 📁 Estrutura do repositório
 
@@ -122,78 +80,6 @@ Lógica de interatividade em JavaScript puro (sem jQuery ou libs):
 - `getReply()` — motor de busca por palavras-chave nas mensagens
 - `quickReply()` / `sendMsg()` — processamento de interações do usuário
 
----
-
-## 💻 Como rodar localmente
-
-Não é necessário instalar nada. O projeto roda direto no navegador.
-
-```bash
-# 1. Clonar o repositório
-git clone https://github.com/MatheusP/mpulse-ia-site.git
-
-# 2. Entrar na pasta
-cd mpulse-ia-site
-
-# 3. Abrir no navegador
-# Windows:
-start html/index.html
-
-# macOS:
-open html/index.html
-
-# Linux:
-xdg-open html/index.html
-```
-
-Ou simplesmente arraste o arquivo `html/index.html` para qualquer navegador.
-
-> **Nota:** As fontes do Google Fonts requerem conexão com a internet para carregar. Sem internet, o site usa as fontes de fallback do sistema (sans-serif).
-
----
-
-## 🚀 Como publicar no ar
-
-O deploy é feito via integração **GitHub → Vercel**. Uma vez configurado, qualquer alteração no repositório é publicada automaticamente em menos de 1 minuto.
-
-### Passo 1 — GitHub (já feito)
-O código já está neste repositório. ✅
-
-### Passo 2 — Vercel (primeira vez)
-1. Acesse [vercel.com](https://vercel.com) e entre com sua conta GitHub
-2. Clique em **"Add New Project"**
-3. Selecione este repositório (`mpulse-ia-site`)
-4. Em **"Root Directory"**, configure para `html/`
-5. Clique em **"Deploy"**
-
-O Vercel gera automaticamente um link como `mpulse-ia-site.vercel.app`.
-
-### Passo 3 — Domínio próprio (opcional)
-1. Compre `mpulseia.com.br` no [Registro.br](https://registro.br) (~R$40/ano)
-2. No Vercel: **Settings → Domains → Add Domain**
-3. Copie os registros DNS fornecidos pelo Vercel
-4. Cole-os no painel DNS do Registro.br
-5. Aguarde a propagação (até 24h, geralmente menos de 1h)
-
----
-
-## 🔄 Como atualizar o site
-
-```bash
-# 1. Fazer a alteração no arquivo desejado
-# Exemplos: editar html/index.html, css/main.css ou js/main.js
-
-# 2. Adicionar as alterações ao Git
-git add .
-
-# 3. Fazer o commit com uma mensagem descritiva
-git commit -m "feat: adiciona novo serviço de automação"
-
-# 4. Enviar para o GitHub
-git push origin main
-
-# ✅ O Vercel detecta o push e publica automaticamente em ~30 segundos
-```
 
 ### Convenção de mensagens de commit
 
@@ -245,21 +131,6 @@ const respostas = {
 };
 ```
 
----
-
-## 🎯 Serviços oferecidos
-
-| # | Produto | Público-alvo | A partir de |
-|---|---|---|---|
-| 01 | **Strategos — CRM Político** | Vereadores, Deputados | R$ 600/mês |
-| 02 | **WhatsApp Político + IA** | Gabinetes e campanhas | R$ 800/mês |
-| 03 | **Agente IA — Barbearia** | Barbearias e salões | R$ 500/mês |
-| 04 | **Agente IA — Clínica de Saúde** | Odonto e medicina | R$ 600/mês |
-| 05 | **Agente IA — Comércio** | Mercados, lojas, restaurantes | R$ 500/mês |
-| 06 | **Automações N8N sob medida** | Qualquer segmento | R$ 500/mês |
-
----
-
 ## 🗺️ Roadmap
 
 ### v1.0 — Atual
@@ -270,40 +141,9 @@ const respostas = {
 - [x] Código separado em HTML, CSS e JS
 - [x] Publicação no GitHub
 
-### v1.1 — Próximos passos
-- [ ] Publicar no ar via Vercel
-- [ ] Configurar domínio próprio (mpulseia.com.br)
-- [ ] Adicionar favicon e ícone para celular (PWA básico)
-- [ ] Conectar formulário ao N8N para notificação automática por WhatsApp
-
-### v2.0 — Futuro (migração para Lovable)
-- [ ] Migrar para React + TypeScript + Tailwind CSS
-- [ ] Área do cliente com login (Supabase Auth)
-- [ ] Blog técnico sobre IA e automação (SEO)
-- [ ] Dashboard de demonstração do Strategos
-- [ ] Integração com sistema de pagamento (Pagar.me)
-
----
-
-## 📞 Contato
-
-**Matheus Pimentel**  
-Mestre em Engenharia · Especialista em IA para Negócios
-
-| Canal | Contato |
-|---|---|
-| 📱 WhatsApp | [(24) 9 9999-9999](https://wa.me/5524999999999) |
-| ✉️ E-mail | seuemail@gmail.com |
-| 📍 Localização | Barra Mansa, RJ — Atende todo Brasil |
-
----
-
-## 📄 Licença
-
-```
 Copyright © 2026 MPulse IA — Matheus Pimentel
 Todos os direitos reservados.
 
 Este projeto é de uso privado e proprietário.
 É proibida a reprodução total ou parcial sem autorização expressa do autor.
-```
+
